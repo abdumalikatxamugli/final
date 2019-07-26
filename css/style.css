@@ -7,7 +7,7 @@
 	src:  url('../fonts/ProximaNova-Extrabld.woff') format('woff');
 }
 .container{
-	max-width: 1410px;
+	max-width: 1440px;
 }
 header{
 	background-color:#4a4a4a;
@@ -19,6 +19,9 @@ ul{
 }
 img{
 	max-width: 100%;
+}
+body{
+	background-color: #fffefb;
 }
 .a-logo-wrapper{
 	display: flex;
@@ -168,3 +171,17 @@ nav ul li a{
 	font-size: 17px;
 	font-family: "ProximaNova";
 }
+ h3 {
+	 margin: 0;
+ }
+/* news-home section */
+.titles-home{
+	font-family: ProximaNova-Extrabld;
+	color: #d0bf91;
+	padding-bottom: 25px;
+	padding-top: 50px;
+}
+.news-home__main{
+	height: 525px;
+}
+/* END_news-home section */

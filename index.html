@@ -64,7 +64,35 @@
 			</div>
 		</div>
 	</header>
-
+	<section class="news-home">
+		<div class="container">
+			<div class="news-home__main">
+				<div class="titles-home">
+					<div class="clearfix">
+						<h3 class="pull-left">Новости и события</h3>
+						<div class="pull-right my-owl-nav">
+							<span><a href="">Все партнеры</a></span>
+							<span class="my-prev-button__news">
+								s
+							</span>
+							<span class="my-next-button__news">
+								s
+							</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="owl-carousel owl-theme">
+					<div class="news-home__item">
+						<img src="images/tmp/news_1.png" alt="">
+						<div class="news-home__item-text">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<script src="js/jquery.min.js"></script>
@@ -76,6 +104,39 @@
 		$(".a-site-lang").click(function(e){
 			$(".a-lang-dropdown").fadeToggle();	
 		});
-	</script>	
+		$('.owl-carousel').owlCarousel({
+			loop:true,
+			margin:10,
+			nav:false,
+			dots: false,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:3
+				}
+			}
+		});
+
+		var selector = $('.owl-carousel');
+
+		$('.my-next-button__news').click(function() {
+		selector.trigger('next.owl.carousel');
+		});
+
+		$('.my-prev-button__news').click(function() {
+		selector.trigger('prev.owl.carousel');
+		});
+		$(document).ready(function(){
+		$("#nav_button").click(function(){
+			$(".nav_bar").slideToggle("slow");
+		});
+		});
+	</script>
+		
 </body>
 </html>

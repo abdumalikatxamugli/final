@@ -1,0 +1,40 @@
+<div class="owl-carousel owl-theme owl-loaded">
+    <div class="owl-stage-outer">
+        <div class="owl-stage">
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+        </div>
+    </div>
+    <div class="owl-controls">
+        <div class="owl-nav">
+            <div class="owl-prev">prev</div>
+            <div class="owl-next">next</div>
+        </div>
+        <div class="owl-dots">
+            <div class="owl-dot active"><span></span></div>
+            <div class="owl-dot"><span></span></div>
+            <div class="owl-dot"><span></span></div>
+        </div>
+    </div>
+</div>
+$('.owl-carousel').owlCarousel({
+    items: '7',
+    rtl: true,
+    refreshClass: 'owl-refresh',
+    loadedClass: 'owl-loaded',
+    loadingClass: 'owl-loading',
+    rtlClass: 'owl-rtl',
+    responsiveClass: 'owl-responsive',
+    dragClass: 'owl-drag',
+    itemClass: 'owl-item',
+    stageClass: 'owl-stage',
+    stageOuterClass: 'owl-stage-outer',
+    grabClass: 'owl-grab',
+    autoHeightClass: 'owl-height',
+    navContainerClass: 'owl-nav',
+    navClass: [ 'owl-prev', 'owl-next' ],
+    slideBy: 1,
+    dotClass: 'owl-dot',
+    dotsClass: 'owl-dots'
+})
