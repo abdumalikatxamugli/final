@@ -1,7 +1,10 @@
 @font-face {
-  font-family: 'ProximaNova';
-  src:  url('myfont.woff2') format('woff2'),
-        url('myfont.woff') format('woff');
+	font-family: 'ProximaNova';
+	src:  url('../fonts/ProximaNova-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'ProximaNova-Extrabld';
+	src:  url('../fonts/ProximaNova-Extrabld.woff') format('woff');
 }
 .container{
 	max-width: 1410px;
@@ -48,10 +51,12 @@ img{
 .a-logo-text h3{
 	font-size:15px;
 	color:#e2d5b3;
+	font-family: 'ProximaNova-Extrabld';
 }
 .a-logo-text span{
 	font-size:11px;
 	color:#e2d5b3;
+	font-family: 'ProximaNova';
 }
 .a-tools-nav{
 	height: 140px;
@@ -67,12 +72,50 @@ img{
 	max-height: 50%;
 	align-items: center;
 }
+.a-tools>*{
+	margin-left: 2.8%;
+}
 .a-tools-nav img{
 	height: 20px;
 	width: 20px;
+	margin:0 5px;
 }
 .a-lang{
 	color:#e2d5b3;
+	font-size: 16px;
+	font-family: 'ProximaNova';
+	position: relative;
+}
+.a-search{
+	position: relative;
+}
+.a-search input{
+	width:300px;
+	outline: 0 !important;
+	padding: 0 15px;
+	color:#e2d5b3;
+}
+.a-search input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #e2d5b3;
+
+  opacity: 1; /* Firefox */
+}
+
+.a-search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #e2d5b3;
+
+}
+
+.a-search input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #e2d5b3;
+
+}
+.a-search img{
+	position: absolute;
+	right: 6px;
+	top: calc(50% - 7.5px);
+	height: 15px;
+	width: 15px;
 }
 .a-search input{
 	border-radius: 10px;
@@ -81,16 +124,40 @@ img{
 	background-color: #3f3f3f;
 
 }
+.a-lang ul{
+	position: absolute;
+    right: 0;
+    margin-top: 5px;
+    text-align: right;
+    background-color: grey;
+    padding: 10px;
+}
+.a-lang ul li{
+	list-style: none;
+}
+.a-lang ul li a{
+	color:#e2d5b3 !important;
+	text-decoration: none;
+}
+.a-site-lang{
+	cursor: pointer;
+
+}
+.a-lang-dropdown{
+	display: none;
+}
 nav{
 	display: flex;
 	justify-content: flex-end;
-	border-bottom: 1px solid white;
 	flex: 0 0 50%;
 	max-height: 50%;
 	align-items: center;
 }
 nav ul{
-	text-align:right;
+	
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
 nav ul li{
 	display: inline-block;

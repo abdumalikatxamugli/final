@@ -19,7 +19,7 @@
 						<div class="a-logo"><img src="images/logo.png" alt="logo"></div>
 						<div class="a-logo-text">
 							<h3>Главное управление миграции и оформления гражданства</h3>
-							<span>Министерство внутренних дел республики узбекистан</span>
+							<span>Министерство внутренних дел<br> республики узбекистан</span>
 						</div>
 					</div>
 				</div>
@@ -32,17 +32,21 @@
 								<img src="images/weaksight.svg" alt="">
 							</div>
 							<div class="a-social">
-								<img src="images/facebook.svg" alt="facebook">
-								<img src="images/twitter.svg" alt="twitter">
-								<img src="images/telegram.svg" alt="telegram">
+								<a href="#"><img src="images/facebook.svg" alt="facebook"></a>
+								<a href="#"><img src="images/twitter.svg" alt="twitter"></a>
+								<a href="#"><img src="images/telegram.svg" alt="telegram"></a>
 							</div>
 							<div class="a-search">
-								<input type="text">
+								<input type="text" placeholder="Поиск по сайту">
 								<img src="images/search.svg" alt="search">
 							</div>
 							<div class="a-lang">
 								<img src="images/language.svg" alt="language">
-								<span>Русский</span>
+								<span class="a-site-lang">Русский</span>
+								<ul class="a-lang-dropdown">
+									<li><a href="#">English</a></li>
+									<li><a href="#">O'zbekcha</a></li>
+								</ul>
 							</div>
 						</div>
 						<nav>
@@ -66,6 +70,12 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>	
+	<script src="js/owl.carousel.min.js"></script>
+
+	<script>
+		$(".a-site-lang").click(function(e){
+			$(".a-lang-dropdown").fadeToggle();	
+		});
+	</script>	
 </body>
 </html>
