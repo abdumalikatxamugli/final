@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src:  url('myfont.woff2') format('woff2'),
+        url('myfont.woff') format('woff');
+}
 .container{
 	max-width: 1410px;
 }
@@ -14,31 +19,31 @@ img{
 }
 .a-logo-wrapper{
 	display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    align-items: center;
-    height: 140px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	align-items: center;
+	height: 140px;
 }
 .a-logo-img{
 	flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+	max-width: 33.333333%;
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 .a-logo-img img{
 	max-width: 100px;
 }
 .a-logo-text{
 	flex: 0 0 66.666%;
-    max-width: 66.666%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+	max-width: 66.666%;
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 .a-logo-text h3{
 	font-size:15px;
@@ -50,17 +55,17 @@ img{
 }
 .a-tools-nav{
 	height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .a-tools{
 	display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid white;
-    flex: 0 0 50%;
-    max-height: 50%;
-    align-items: center;
+	justify-content: flex-end;
+	border-bottom: 1px solid white;
+	flex: 0 0 50%;
+	max-height: 50%;
+	align-items: center;
 }
 .a-tools-nav img{
 	height: 20px;
@@ -78,11 +83,11 @@ img{
 }
 nav{
 	display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid white;
-    flex: 0 0 50%;
-    max-height: 50%;
-    align-items: center;
+	justify-content: flex-end;
+	border-bottom: 1px solid white;
+	flex: 0 0 50%;
+	max-height: 50%;
+	align-items: center;
 }
 nav ul{
 	text-align:right;
@@ -92,5 +97,7 @@ nav ul li{
 }
 nav ul li a{
 	text-decoration:none !important;
-	color:#e2d5b3; 
+	color:#e2d5b3 !important; 
+	font-size: 17px;
+	font-family: "ProximaNova";
 }
