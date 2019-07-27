@@ -94,6 +94,164 @@
 			</div>
 		</div>
 	</section>
+	
+	<section class="statistics">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="headline">
+						<h2>Статистика</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="statistics-slider owl-carousel">
+						<div class="stat-item">
+							<div class="stat-row">
+								<div class="stat-col">
+									<div class="stat-inner">
+										<div class="stat-text-img">
+											<img src="images/citizenship.svg" alt="flag">
+											<span class="stat-text">Гражданство Республики Узбекистан</span>
+										</div>
+										<div class="stat-numbers-wrapper">
+											<div class="stat-numbers">
+												<div class="stat-number">
+													<span class="number">4 530</span>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+												<div class="stat-number">
+													<span class="number">10 530</span><br>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="stat-col">
+									<div class="stat-inner">
+										<div class="stat-text-img">
+											<img src="images/citizenship.svg" alt="flag">
+											<span class="stat-text">Гражданство Республики Узбекистан</span>
+										</div>
+										<div class="stat-numbers-wrapper">
+											<div class="stat-numbers">
+												<div class="stat-number">
+													<span class="number">4 530</span>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+												<div class="stat-number">
+													<span class="number">10 530</span><br>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="stat-col">
+									<div class="stat-inner">
+										<div class="stat-text-img">
+											<img src="images/citizenship.svg" alt="flag">
+											<span class="stat-text">Гражданство Республики Узбекистан</span>
+										</div>
+										<div class="stat-numbers-wrapper">
+											<div class="stat-numbers">
+												<div class="stat-number">
+													<span class="number">4 530</span>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+												<div class="stat-number">
+													<span class="number">10 530</span><br>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="stat-item">
+							<div class="stat-row">
+								<div class="stat-col">
+									<div class="stat-inner">
+										<div class="stat-text-img">
+											<img src="images/citizenship.svg" alt="flag">
+											<span class="stat-text">Гражданство Республики Узбекистан</span>
+										</div>
+										<div class="stat-numbers-wrapper">
+											<div class="stat-numbers">
+												<div class="stat-number">
+													<span class="number">4 530</span>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+												<div class="stat-number">
+													<span class="number">10 530</span><br>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="stat-col">
+									<div class="stat-inner">
+										<div class="stat-text-img">
+											<img src="images/citizenship.svg" alt="flag">
+											<span class="stat-text">Гражданство Республики Узбекистан</span>
+										</div>
+										<div class="stat-numbers-wrapper">
+											<div class="stat-numbers">
+												<div class="stat-number">
+													<span class="number">4 530</span>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+												<div class="stat-number">
+													<span class="number">10 530</span><br>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="stat-col">
+									<div class="stat-inner">
+										<div class="stat-text-img">
+											<img src="images/citizenship.svg" alt="flag">
+											<span class="stat-text">Гражданство Республики Узбекистан</span>
+										</div>
+										<div class="stat-numbers-wrapper">
+											<div class="stat-numbers">
+												<div class="stat-number">
+													<span class="number">4 530</span>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+												<div class="stat-number">
+													<span class="number">10 530</span><br>
+													<span class="number-description">паспортов выдано</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="controllers">
+						<div class="cont-left">left</div>
+						<div class="cont-text owl-carousel">
+							<div>Май 2019</div>
+							<div>Июнь 2019</div>
+						</div>
+						<div class="cont-right">right</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section class="a-useful-links">
 		<div class="container">
@@ -231,6 +389,55 @@
 				}
 			}
 		});
+
+		$('.statistics-slider').owlCarousel({
+			loop:true,
+			margin:15,
+			nav:false,
+			dots: false,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				1000:{
+					items:1
+				}
+			}
+		});
+		$('.cont-text').owlCarousel({
+			loop:true,
+			margin:15,
+			nav:false,
+			dots: false,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				1000:{
+					items:1
+				}
+			}
+		});
+
+		var stat_slider = $('.statistics-slider');
+		var cont_slider = $('.cont-text');
+
+		$('.cont-left').click(function() {
+			cont_slider.trigger('next.owl.carousel');
+			stat_slider.trigger('next.owl.carousel');
+		});
+
+		$('.cont-right').click(function() {
+			cont_slider.trigger('prev.owl.carousel');
+			stat_slider.trigger('prev.owl.carousel');
+		});
+		
 	</script>
 
 </body>
