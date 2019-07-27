@@ -330,8 +330,8 @@ footer .a-300-right{
 }
 .stat-numbers-wrapper{
 	display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 .stat-numbers{
 	display: flex;
@@ -352,4 +352,30 @@ footer .a-300-right{
 	color:#2c2828;
 	display: block;
 	width:90px;
+}
+.controllers{
+	display: flex;
+	justify-content: center;
+	padding-top:50px;
+}
+.controllers .cont-text{
+	max-width:100px;
+}
+.cont-left , .cont-right{
+	padding: 3px;
+	cursor: pointer;
+}
+.cont-text .period{
+	text-align:center;
+	font-size: 18px;
+	font-family: "ProximaNova";
+	
+}
+.headline{
+	margin-bottom:25px;
+}
+.headline h2{
+	font-size: 28px;
+	font-family: 'ProximaNova-Extrabld';
+	color:#d0bf91;
 }
