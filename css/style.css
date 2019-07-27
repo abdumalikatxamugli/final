@@ -7,13 +7,12 @@
 	src:  url('../fonts/ProximaNova-Extrabld.woff') format('woff');
 }
 @font-face {
-<<<<<<< HEAD
 	font-family: 'ProximaNova-Light';
 	src:  url('../fonts/ProximaNova-Light.woff') format('woff');
-=======
+}
+@font-face 	{
 	font-family: 'ProximaNova-Bold';
 	src:  url('../fonts/ProximaNova-Bold.woff') format('woff');
->>>>>>> d50d348cf156f3f3a934c3347324dab50289f423
 }
 body{
 	background-color: #fffefb;
