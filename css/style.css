@@ -6,6 +6,10 @@
 	font-family: 'ProximaNova-Extrabld';
 	src:  url('../fonts/ProximaNova-Extrabld.woff') format('woff');
 }
+@font-face {
+	font-family: 'ProximaNova-Bold';
+	src:  url('../fonts/ProximaNova-Bold.woff') format('woff');
+}
 body{
 	background-color: #fffefb;
 }
@@ -30,29 +34,30 @@ body{
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin-right: -15px;
-	margin-left: -15px;
+	margin-right: -6px;
+	margin-left: -6px;
 	align-items: center;
+	
+}
+header .a-logo-wrapper{
 	height: 140px;
 }
-.a-logo-img{
-	flex: 0 0 33.333333%;
-	max-width: 33.333333%;
-	position: relative;
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
+.a-logo{
+	
+	padding-right: 6px;
+	padding-left: 6px;
 }
-.a-logo-img img{
-	max-width: 100px;
-}
+
 .a-logo-text{
 	flex: 0 0 66.666%;
 	max-width: 66.666%;
 	position: relative;
 	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+.a-logo-img img{
+	max-width: 100px;
 }
 .a-logo-text h3{
 	font-size:15px;
@@ -214,4 +219,68 @@ h3 {
 }
 .a-useful-links .owl-stage-outer{
 	padding: 15px 0px;
+}
+
+/*footer*/
+
+footer{
+	background-color: #4a4a4a;
+	color:#e2d5b3;
+	padding:30px 0;
+}
+.a-top-bottom-aligned{
+	height: 140px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+footer .a-logo img{
+	max-width:95px;
+}
+footer .a-logo-text h3{
+	font-size:16px;
+	font-family: 'ProximaNova-Bold';
+}
+footer .a-logo-text span{
+	font-size:13px;
+	font-family: 'ProximaNova';
+}
+footer .copyright span{
+	font-family: 'ProximaNova';
+	font-size:15px;
+}
+footer .a-contacts{
+	display: flex;
+    justify-content: space-between;
+}
+footer .a-contact{
+	display: flex;
+	align-items: center;
+}
+footer .a-contact{
+	font-family: 'ProximaNova';
+	font-size:14px;
+}
+footer .a-contact span{
+	font-family: 'ProximaNova-Bold';
+	font-size:16px;
+}
+footer .a-usage-right{
+	font-size: 15px;
+	font-family: 'ProximaNova';
+}
+footer .a-mistake, .a-author{
+	font-size:15px;
+	font-family: 'ProximaNova'
+}
+footer .phone-number{
+	padding-left:10px;
+}
+footer .a-300{
+	max-width: 300px;
+	margin:0 auto;
+}
+footer .a-300-right{
+	max-width: 300px;
+	float: right;
 }
