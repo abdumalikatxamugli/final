@@ -82,7 +82,7 @@
 					</div>
 				</div>
 				
-				<div class="owl-carousel owl-theme">
+				<div class="owl-one owl-carousel owl-theme">
 					<div class="news-home__item">
 						<img src="images/tmp/news_1.png" alt="">
 						<div class="news-home__item-text">
@@ -94,6 +94,24 @@
 		</div>
 	</section>
 
+	<section class="a-useful-links">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="owl-carousel useful-links-slider">
+						<div class="a-useful-card">
+							<div class="a-useful-img">
+								<img src="images/usefull.png" alt="usefull link">
+							</div>
+							<div class="a-usefull-text">
+								<span>Единый портал интерактивных  государсвтенных услуг</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -104,7 +122,7 @@
 		$(".a-site-lang").click(function(e){
 			$(".a-lang-dropdown").fadeToggle();	
 		});
-		$('.owl-carousel').owlCarousel({
+		$('.owl-one').owlCarousel({
 			loop:true,
 			margin:10,
 			nav:false,
@@ -122,21 +140,39 @@
 			}
 		});
 
-		var selector = $('.owl-carousel');
+		var selector = $('.owl-one');
 
 		$('.my-next-button__news').click(function() {
-		selector.trigger('next.owl.carousel');
+			selector.trigger('next.owl.carousel');
 		});
 
 		$('.my-prev-button__news').click(function() {
-		selector.trigger('prev.owl.carousel');
+			selector.trigger('prev.owl.carousel');
 		});
 		$(document).ready(function(){
-		$("#nav_button").click(function(){
-			$(".nav_bar").slideToggle("slow");
+			$("#nav_button").click(function(){
+				$(".nav_bar").slideToggle("slow");
+			});
 		});
+
+		$('.useful-links-slider').owlCarousel({
+			loop:true,
+			margin:15,
+			nav:false,
+			dots: false,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:5
+				}
+			}
 		});
 	</script>
-		
+
 </body>
 </html>
