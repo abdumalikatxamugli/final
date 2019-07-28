@@ -340,28 +340,55 @@ h3 {
 }
 /* END_Administration section */
 /* QA SECTION */
+.qa-home__main{
+	padding-left: 15px;
+	padding-right: 15px;
+}
 .qa-home img{
 	width: 30px;
 	height: 30px;
 }
-.qa-home .accordion{
-	
-}
+	  
 .qa-home .card-header h6{
 	font-family: ProximaNova;
 	font-size: 16px;
-}
-.qa-home .card-header {
-    padding: .75rem 1.25rem;
-    margin-bottom: 0;
-	/* background-color: #ffffff; */
-	background-color: red;
-	border-bottom: 1px solid rgba(0,0,0,.125);
-	border-radius: 10px;
-	box-shadow: 0px 4px 20px 0pxc rgba(0, 0, 0, 0.04);
+	margin: 0;
 }
   
+.qa-home .card-header {
+    padding: 30px 30px 30px 40px;
+    margin-bottom: 0;
+	background-color: rgb(255, 255, 255);
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+.qa-home  .card-body p{
+	border-top: 1px solid rgb(191, 191, 191);
+	padding-top: 30px;
+}   
+.qa-home  .card-body {
+		padding: 0 30px 30px 30px; 
+}
+.qa-home .card .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+	 padding: 0;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 .qa-home .card {
+	margin-bottom: 15px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.04);
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -372,10 +399,36 @@ h3 {
     background-color: #fff;
     background-clip: border-box;
     border: none;
-	border-radius: .25rem;
+	border-radius: 10px;
 	padding-left: 7.5px;
 	padding-right: 7.5px;
-	padding-bottom: 15px;
+	padding-bottom: 0;
+}
+.qa-home .accordion__square{
+	-ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+	max-width: 50%;
+	position: relative;
+    width: 100%;
+}
+.qa-home .accordion>.card:first-of-type {
+    border-bottom: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.qa-home .accordion>.card:not(:first-of-type):not(:last-of-type) {
+	border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.qa-home .accordion>.card:last-of-type {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.qa-home .accordion__square:nth-child(1){
+	padding-right: 7.5px;
+}
+.qa-home .accordion__square:nth-child(2){
+	padding-left: 7.5px;
 }
 /* END_QA SECTION */
 /*usefull links*/
