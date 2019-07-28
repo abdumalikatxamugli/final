@@ -201,8 +201,8 @@ h3 {
 	font-size: 15px;
 	margin-right: 45px;
 }
-.titles-home span{
-	
+.news-home .titles-home{
+	padding-bottom: 0;
 }
 .news-home .my-col-6{
 	-ms-flex: 0 0 50%;
@@ -231,6 +231,24 @@ h3 {
 .news-home .news-home__item .item__img{
 	border-radius: 10px;	
 }
+.news-home .my-prev-button__news{
+	padding-right: 15px;
+}
+.news-home .my-next-button__news{
+	padding-left: 15px;
+}
+.news-home .my-prev-button__news img,.news-home .my-next-button__news img{
+	width: 25px;
+	height: 55px;
+}
+.news-home__main .titles-home a{
+	text-decoration: none;
+	color: #2c2828;
+}
+.news-home__main .titles-home a:hover{
+	color: #d6c8a0;
+}
+  
 .news-home .news-home__item .item__img::after{
 	background: linear-gradient(transparent 50%, black);
 	background: -o-linear-gradient(transparent 50%, black);
@@ -250,6 +268,7 @@ h3 {
 }
 .news-home .news-home__item .item__inside{
 	position: relative;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 }
 .news-home .item__inside .item__text{
 	position: absolute;
@@ -284,6 +303,9 @@ h3 {
     position: relative;
 	width: 100%;
 	padding: 7.5px;
+}
+.administration-home .titles-home{
+	padding-bottom: 22.5px;
 }
 .administration__square1 .square1__text{
 	border-radius: 10px;
